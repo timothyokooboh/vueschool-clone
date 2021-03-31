@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="hero-section">
-            <div class="d-flex justify-center justify-lg-space-between white--text">
+            <div class="d-flex justify-center justify-lg-space-between white--text pr-8">
                 <div class="d-flex text-capitalize align-center mr-8 mr-md-16" style="height: 5rem ">
                     <div class="">
                         <v-img 
@@ -19,7 +19,7 @@
 
                     <div class="d-flex align-center text-capitalize" style="height: 5rem">
                     <div class="pr-4">
-                        <v-icon>mdi-magnify</v-icon>
+                        <v-icon class="white--text">mdi-magnify</v-icon>
                     </div>
                     <div>
                         <v-icon 
