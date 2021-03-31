@@ -4,6 +4,7 @@
       <hero-section></hero-section>
       <vue-school-courses></vue-school-courses>
       <more-lessons></more-lessons>
+      <vue-school-teachers></vue-school-teachers>
     </v-main>
   </v-app>
 </template>
@@ -12,6 +13,7 @@
 import HeroSection from "@/components/HeroSection";
 import VueSchoolCourses from './components/VueSchoolCourses.vue';
 import MoreLessons from './components/MoreLessons.vue';
+import VueSchoolTeachers from "./components/VueSchoolTeachers";
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
   components: {
     HeroSection,
     VueSchoolCourses,
-    MoreLessons
+    MoreLessons,
+    VueSchoolTeachers
   },
 
   data: () => ({
