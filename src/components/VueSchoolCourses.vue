@@ -12,7 +12,12 @@
             color="#F63F75"
             class="title"
           >
-            new content added weekly
+            <a 
+                href="https://vueschool.io/courses" 
+                style="text-decoration: none; color: #F63F75"
+            >
+                new content added weekly
+            </a>
           </v-btn>
         </div>
 
@@ -25,14 +30,21 @@
             width="90%"
             style="position: relative;"
           >
+           
             <v-avatar 
-              tile 
-              width="100%" 
-              height="200"
-              style="position: relative;"
-              class="rounded-t-lg"
+            tile 
+            width="100%" 
+            height="200"
+            style="position: relative;"
+            class="rounded-t-lg"
             >
-              <v-img :src="course.image"></v-img>
+             <v-hover v-slot="{hover}">
+                <v-img 
+                    :src="course.image"
+                    :class="{'on-hover': hover}"
+                >
+                </v-img>
+             </v-hover>
             </v-avatar>
             <div 
               style="position: absolute; top: 20px; left: 10px;"
@@ -79,7 +91,18 @@
         </div>
 
         <div class="text-center mt-8">
-          <v-btn color="#4DC3A0" class="rounded-pill py-6 py-sm-8 px-8 px-sm-12 title text-sm-h4 white--text mb-4">see all our courses</v-btn>
+          <v-btn 
+            color="#4DC3A0" 
+            class="rounded-pill py-6 py-sm-8 px-8 px-sm-12 title text-sm-h4 white--text mb-4"
+            >
+                <a 
+                    href="https://vueschool.io/courses"
+                    class="white--text"
+                    style="text-decoration: none"
+                >
+                    see all our courses
+                </a>
+            </v-btn>
           <div>
             <span style="color: #F63F75">Learn Vue.js</span> <span class="font-weight-bold grey--text text--darken-2 ">for $25/month or $190/year</span>
           </div>
@@ -102,14 +125,19 @@ export default {
 
 <style scoped>
     .in-progress {
-    background-color: #fff;
-  }
-  .free {
-    background-color: #667DFF;
-    color: #fff;
-  }
-  .premium {
-    background-color: #FF3DA8;
-    color: #fff;
-  }
+        background-color: #fff;
+    }
+    .free {
+        background-color: #667DFF;
+        color: #fff;
+    }
+    .premium {
+        background-color: #FF3DA8;
+        color: #fff;
+    }
+
+    .on-hover {
+        transform: scale(1.1);
+        transition: all .2s;
+    }
 </style>

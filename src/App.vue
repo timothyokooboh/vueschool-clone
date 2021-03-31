@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <hero-section></hero-section>
-      <vue-school-courses></vue-school-courses>
+      <vue-school-courses id="courses"></vue-school-courses>
       <more-lessons></more-lessons>
       <vue-school-teachers></vue-school-teachers>
       <vue-school-benefits></vue-school-benefits>
@@ -40,6 +40,7 @@ export default {
 <style>
   :root {
     font-size: 62.5%; /* 1 rem = 10px */
+    scroll-behavior: smooth;
   }
 
   body {

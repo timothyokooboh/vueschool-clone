@@ -23,12 +23,14 @@
                   </custom-input>
                   <div>
                     <v-btn 
-                      class="headline white--text headline mr-2 py-6 px-8 font-bold"
+                      class="white--text text-body-1 text-sm-h5 mr-2 py-4 py-sm-6 px-4 px-sm-8 font-bold"
                       color="#40B08E"
                     >
-                      Start Learning Vue.js
+                      <span class="hidden-sm-and-down">Start Learning Vue.js</span>
+                      <span class="hidden-md-and-up">Learn Vue.js</span>
                     </v-btn>
                   </div>
+                  
                  </div>
                 </div>
               </div>
