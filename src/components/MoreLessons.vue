@@ -9,8 +9,8 @@
             
             <div class="d-md-flex justify-space-between white d-lg-block">
                 <div
-                    v-for="course in featuredLessons"
-                    :key="course"
+                    v-for="(course, index) in featuredLessons"
+                    :key="index"
                     class="py-4 px-8 rounded-t white"
                 >
                     <div class="d-md-block d-lg-flex align-center">
@@ -50,8 +50,8 @@
             <div class="display-2 pt-16 pb-8" style="color: #5E527F">Latest lessons</div>
             <div class="d-md-flex justify-space-between white d-lg-block">
                 <div
-                    v-for="course in latestLessons"
-                    :key="course"
+                    v-for="(course, index) in latestLessons"
+                    :key="index"
                     class="py-4 px-8 rounded-t white"
                 >
                     <div class="d-md-block d-lg-flex align-center">
@@ -91,8 +91,8 @@
             <div class="display-2 pt-16 pb-8" style="color: #5E527F">Upcoming lessons</div>
             <div class="d-md-flex justify-space-between white d-lg-block">
                 <div
-                    v-for="course in upcomingLessons"
-                    :key="course"
+                    v-for="(course, index) in upcomingLessons"
+                    :key="index"
                     class="py-4 px-8 rounded-t white"
                 >
                     <div class="d-md-block d-lg-flex align-center">
