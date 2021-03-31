@@ -13,7 +13,7 @@
             style="width: 100%"
           >
             <div>
-              <div class="display-2 pb-4">Join our Vue.js community and get started for free:</div>
+              <div class="display-2 pb-8">Join our Vue.js community and get started for free:</div>
                 <div class="d-flex align-center justify-center white">
                   <custom-input 
                     class="white"
