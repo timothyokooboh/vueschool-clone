@@ -21,8 +21,8 @@
           class="d-flex flex-wrap align-center justify-center"
         >
           <v-card
-            v-for="teacher in teachers"
-            :key="teacher"
+            v-for="(teacher, index) in teachers"
+            :key="index"
             max-width="40rem"
             width="90%"
             class="mr-2 mb-16"

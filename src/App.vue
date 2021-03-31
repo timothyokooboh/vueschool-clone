@@ -6,7 +6,7 @@
       <more-lessons></more-lessons>
       <vue-school-teachers></vue-school-teachers>
       <vue-school-benefits></vue-school-benefits>
-      
+      <the-footer></the-footer>
     </v-main>
   </v-app>
 </template>
@@ -17,6 +17,7 @@ import VueSchoolCourses from './components/VueSchoolCourses.vue';
 import MoreLessons from './components/MoreLessons.vue';
 import VueSchoolTeachers from "./components/VueSchoolTeachers";
 import VueSchoolBenefits from "./components/VueSchoolBenefits";
+import TheFooter from "./components/TheFooter";
 
 export default {
   name: 'App',
@@ -26,7 +27,8 @@ export default {
     VueSchoolCourses,
     MoreLessons,
     VueSchoolTeachers,
-    VueSchoolBenefits
+    VueSchoolBenefits,
+    TheFooter,
   },
 
   data: () => ({
