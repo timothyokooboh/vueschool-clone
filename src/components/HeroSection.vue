@@ -132,7 +132,7 @@
                                 color="#3DAD8B"
                                 class="white--text text-body-1 text-sm-h5 mr-2 py-4 py-sm-6 px-4 px-sm-8 font-bold"
                             >
-                                start learning
+                                Start learning
                             </v-btn>
                         </div>
                     </div>
